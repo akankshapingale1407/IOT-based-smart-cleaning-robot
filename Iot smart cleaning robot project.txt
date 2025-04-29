@@ -1,0 +1,82 @@
+char command;
+
+int motor1Pin1 = 5; // Motor A
+int motor1Pin2 = 6;
+int motor2Pin1 = 9; // Motor B
+int motor2Pin2 = 10;
+
+int sprayPin = 7; // Mop spray or brush motor
+
+void setup() {
+  Serial.begin(9600); // Bluetooth baud rate
+  pinMode(motor1Pin1, OUTPUT);
+  pinMode(motor1Pin2, OUTPUT);
+  pinMode(motor2Pin1, OUTPUT);
+  pinMode(motor2Pin2, OUTPUT);
+  pinMode(sprayPin, OUTPUT);
+}
+
+void loop() {
+  if (Serial.available() > 0) {
+    char command = Serial.read();
+
+    switch (command) {
+      case 'F': // Forward
+        moveForward();
+        break;
+      case 'B': // Backward
+        moveBackward();
+        break;
+      case 'L': // Left
+        turnLeft();
+        break;
+      case 'R': // Right
+        turnRight();
+        break;
+      case 'S': // Stop
+        stopMoving();
+        break;
+      case 'M': // Mop ON (spray or brush start)
+        digitalWrite(sprayPin, HIGH);
+        break;
+      case 'N': // Mop OFF (spray or brush stop)
+        digitalWrite(sprayPin, LOW);
+        break;
+    }
+  }
+}
+
+void moveForward() {
+  digitalWrite(motor1Pin1, HIGH);
+  digitalWrite(motor1Pin2, LOW);
+  digitalWrite(motor2Pin1, HIGH);
+  digitalWrite(motor2Pin2, LOW);
+}
+
+void moveBackward() {
+  digitalWrite(motor1Pin1, LOW);
+  digitalWrite(motor1Pin2, HIGH);
+  digitalWrite(motor2Pin1, LOW);
+  digitalWrite(motor2Pin2, HIGH);
+}
+
+void turnLeft() {
+  digitalWrite(motor1Pin1, LOW);
+  digitalWrite(motor1Pin2, HIGH);
+  digitalWrite(motor2Pin1, HIGH);
+  digitalWrite(motor2Pin2, LOW);
+}
+
+void turnRight() {
+  digitalWrite(motor1Pin1, HIGH);
+  digitalWrite(motor1Pin2, LOW);
+  digitalWrite(motor2Pin1, LOW);
+  digitalWrite(motor2Pin2, HIGH);
+}
+
+void stopMoving() {
+  digitalWrite(motor1Pin1, LOW);
+  digitalWrite(motor1Pin2, LOW);
+  digitalWrite(motor2Pin1, LOW);
+  digitalWrite(motor2Pin2, LOW);
+}
