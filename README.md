@@ -17,8 +17,8 @@ The robot is equipped with a vacuum mechanism or mop-based cleaning system and c
 <h3>## Components Used:</h3>
 <img src="https://github.com/akankshapingale1407/IOT-based-smart-cleaning-robot/blob/main/ESP8266.jpg" width="500"/>
 <br>
-<font align="center"> NODE MCUESP8266</font>
+<h3> NODE MCUESP8266</h3>
 <br>
-
-
+<img src="https://github.com/akankshapingale1407/IOT-based-smart-cleaning-robot/blob/main/Ulatra%20sonic%20image.jpg" width="500"/>
+<h3>Ultra Sonic Sensor(HC-SR04)</h3>
 
