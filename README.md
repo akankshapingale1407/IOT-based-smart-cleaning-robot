@@ -29,19 +29,19 @@ The robot is equipped with a vacuum mechanism or mop-based cleaning system and c
 <img src="https://github.com/akankshapingale1407/IOT-based-smart-cleaning-robot/blob/main/Dc%20motor%20with%20wheels%20hd%20images.jpg" width="500"/>
 <br><br>
 <h3>## How It Works</h3>
-- The ultrasonic sensors continuously scan the surroundings.
-- If an obstacle is detected, the robot changes direction.
-- The NodeMCU sends data to a cloud platform (e.g., Blynk or ThingSpeak).
-- Users can track cleaning progress or control the bot remotely.
-- The cleaning mechanism (mop/vacuum) runs simultaneously during motion.
+<br> The ultrasonic sensors continuously scan the surroundings.
+<br> If an obstacle is detected, the robot changes direction.
+<br> The NodeMCU sends data to a cloud platform (e.g., Blynk or ThingSpeak).
+<br> Users can track cleaning progress or control the bot remotely.
+<br> The cleaning mechanism (mop/vacuum) runs simultaneously during motion.
 <br><br>
 <h3>## Applications</h3>
-- Home and office floor cleaning
-- Smart automation systems
-- Robotics and embedded systems learning
-- IoT-based smart home integration
+<br> Home and office floor cleaning
+<br> Smart automation systems
+<br> Robotics and embedded systems learning
+<br> IoT-based smart home integration
 <br><br>
 <h3>## Future Enhancements</h3>
-- Path optimization using AI/ML
-- Mobile app
+<br> Path optimization using AI/ML
+<br> Mobile app
 
