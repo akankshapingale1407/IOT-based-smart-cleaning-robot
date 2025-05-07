@@ -21,6 +21,9 @@ The robot is equipped with a vacuum mechanism or mop-based cleaning system and c
 <br>
 <img src="https://github.com/akankshapingale1407/IOT-based-smart-cleaning-robot/blob/main/Ulatra%20sonic%20image.jpg" width="500"/>
 <br>
+<h3> Motor </h3>
+<img src="https://github.com/akankshapingale1407/IOT-based-smart-cleaning-robot/blob/main/L298N%20MOTOR%20driver.jpg" width="500"/>
+
 <h3>Ultra Sonic Sensor(HC-SR04)</h3>
 <br>
 <img src="https://github.com/akankshapingale1407/IOT-based-smart-cleaning-robot/blob/main/Dc%20motor%20with%20wheels%20hd%20images.jpg" width="500"/>
